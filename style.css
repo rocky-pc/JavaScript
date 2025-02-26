@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #00cc99;
+    margin-bottom: 20px;
+}
+
+#chat-container {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#messages {
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    word-wrap: break-word;
+}
+
+.message.sent {
+    background-color: #00cc99;
+    color: #1a1a1a;
+    text-align: right;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#passphrase, #message-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+    outline: none;
+}
+
+#passphrase::placeholder, #message-input::placeholder {
+    color: #a0a0a0;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #00cc99;
+    border: none;
+    border-radius: 5px;
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#send-button:hover {
+    background-color: #00b386;
+}
+
+#qr-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#qr-container h3 {
+    color: #00cc99;
+    margin-bottom: 10px;
+}
+
+#qr-canvas {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.decode-area {
+    text-align: center;
+}
+
+.decode-area h3 {
+    color: #00cc99;
+    margin-bottom: 10px;
+}
+
+#qr-upload {
+    margin: 10px 0;
+}
+
+#decode-button {
+    padding: 10px 20px;
+    background-color: #00cc99;
+    border: none;
+    border-radius: 5px;
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#decode-button:hover {
+    background-color: #00b386;
+}
